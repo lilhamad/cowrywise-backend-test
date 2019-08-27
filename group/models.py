@@ -8,5 +8,6 @@ class Group(models.Model):
     weekly_amount = models.IntegerField()
     capacity = models.IntegerField()
     searchable = models.BooleanField(default=True)
+    members = models.ManyToManyField(User, related_name='group_member', default = '', blank=True, null=True)
     
     
