@@ -9,5 +9,5 @@ router.register('groups', views.GroupView)
 router.register('users', views.UserView)
 
 urlpatterns = [
-    # path('', include(router.urls))
+    path('', include(router.urls))
 ]
